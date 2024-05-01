@@ -1,0 +1,99 @@
+'use client';
+
+import styles from './style.module.scss';
+import Image from 'next/image';
+import Rounded from '../../common/RoundedButton';
+import { useRef } from 'react';
+import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
+import Magnetic from '../../common/Magnetic';
+
+export default function index() {
+    const container = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ["start end", "end end"]
+    })
+    const x = useTransform(scrollYProgress, [0, 1], [0, 100])
+    const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
+    const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+    return (
+        <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 overflow-hidden">
+            <motion.div style={{y}} ref={container}>
+                <div className="mx-auto flex justify-between items-center sm:px-16 py-10">
+                    <div>
+                        <div className='flex justify-center items-center'>
+                            <Image
+                                alt={"Lead Brainer"}
+                                src="brainer.svg"
+                                width={174}
+                                height={87}
+                                className='object-contain'
+                            />
+                        </div>
+                        <div className="flex flex-col flex-wrap max-w-[20px] gap-[24px] mt-12 text-white">
+                            <span className="flex flex-row gap-[10px]">
+                                <Magnetic>
+                                    <img src="facebook.svg" alt="" />
+                                </Magnetic>
+                                <Magnetic>
+                                    <p className="font-bold">Facebook</p>
+                                </Magnetic>
+
+                            </span>
+                            <span className="flex flex-row gap-[10px]">
+                                <Magnetic>
+                                    <img src="instagram.svg" alt="" />
+                                </Magnetic>
+                                <Magnetic>
+                                    <p className="font-bold">Instagram</p>
+                                </Magnetic>
+                            </span>
+                            <span className="flex flex-row gap-[10px]">
+                                <Magnetic>
+                                    <img src="linkedin.svg" alt="" />
+                                </Magnetic>
+                                <Magnetic>
+                                    <p className="font-bold">Linkedin</p>
+                                </Magnetic>
+                            </span>
+                            <span className="flex flex-row gap-[10px]">
+                                <Magnetic>
+                                    <img src="twitter.svg" alt="" />
+                                </Magnetic>
+                                <Magnetic>
+                                    <p className="font-bold">Twitter</p>
+                                </Magnetic>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="vertical"></div>
+                        <h1 className="text-2xl md:text-7xl font-bold text-white">
+                            Lorem ipsum <br /> dolor sit amet
+                        </h1>
+                        <p className="mt-8 text-white">
+                            We’re here for you every step of the way in your creative <br />
+                            journey. <br />
+                            We’ll guide you through the process and and collaborate all <br />
+                            the way through!
+                        </p>
+                        <div className="mt-8">
+                            <Rounded>
+                                <p className="font-bold text-white">View recent works</p>
+                            </Rounded>
+                        </div>
+                    </div>
+                </div>
+                <div className="mx-auto flex justify-between items-center sm:px-16 py-10 bg-transparent">
+                    <span className="flex flex-row gap-[10px]">
+                        <img src="copyright.svg" alt="" />
+                        <p className="text-white">
+                            Lorem ipsum dolor sit amet consectetur. <br />
+                            Augue feugiat amet viverra ac leo amet.
+                        </p>
+                    </span>
+                </div>
+            </motion.div>
+        </section>
+    )
+}
