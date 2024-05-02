@@ -105,7 +105,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="mx-auto py-40 pt-[20vh] px-4 text-center flex justify-center items-center flex-col">
+    <div className="mx-auto py-40 pt-[20vh] px-4 text-center flex justify-center items-center flex-col relative">
       <h1 className="text-[7vw] md:text-7xl font-bold text-white w-[90%]"> 
         Revolutionizing Digital Experiences.
       </h1>

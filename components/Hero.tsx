@@ -61,7 +61,7 @@ export const products = [
     title: "Tailwind Master Kit",
     link: "/",
     thumbnail:
-      "/maze.jpg",
+      "/dark.jpg",
   },
   {
     title: "SmartBridge",
@@ -86,13 +86,13 @@ export const products = [
     title: "Golden Bells Academy",
     link: "/",
     thumbnail:
-      "/maze.jpg",
+      "/bybit.jpg",
   },
   {
     title: "Invoker Labs",
     link: "/",
     thumbnail:
-      "/maze.jpg",
+      "/rock.jpeg",
   },
   {
     title: "E Free Invoice",

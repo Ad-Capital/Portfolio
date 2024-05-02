@@ -24,11 +24,11 @@ export default function Home() {
     )()
   }, [])
   return (
-    <main className='relative'>
+    <main>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Hero />
+      <div className='relative'><Hero /></div>
       <Explore />
       <Footer />
     </main>
