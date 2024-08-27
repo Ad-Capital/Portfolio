@@ -1,8 +1,9 @@
 import styles from './styles.module.scss';
-import Picture1 from '@/public/images/1.jpg';
-import Picture3 from '@/public/images/3.jpeg';
-import Picture4 from '@/public/images/4.jpg';
-import Picture5 from '@/public/images/5.jpg';
+import Picture1 from '@/public/images/1.png';
+import Picture2 from '@/public/images/2.png';
+import Picture3 from '@/public/images/3.png';
+import Picture4 from '@/public/images/4.png';
+import Picture5 from '@/public/images/5.png';
 import Picture6 from '@/public/images/6.jpg';
 import Picture7 from '@/public/images/7.jpg';
 import { LottieAnimation } from '@/components';
@@ -29,6 +30,10 @@ export default function Index() {
             scale: scale4
         },
         {
+            src: Picture2,
+            scale: scale4
+        },
+        {
             src: Picture3,
             scale: scale6
         },
@@ -39,14 +44,6 @@ export default function Index() {
         {
             src: Picture5,
             scale: scale6
-        },
-        {
-            src: Picture6,
-            scale: scale8
-        },
-        {
-            src: Picture7,
-            scale: scale9
         }
     ];
 

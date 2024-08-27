@@ -1,7 +1,7 @@
 .container {
     height: 300vh;
-    position: relative;
     background-color: black;
+    position: relative;
 
     .sticky {
         position: sticky;
@@ -32,14 +32,15 @@
             &:nth-of-type(2) {
                 .imageContainer {
                     top: -30vh;
-                    left: 5vw;
+                    left: 0vw;
                     width: 35vw;
                     height: 30vh;
                 }
 
                 @media screen and (max-width: 1024px) {
                     .imageContainer {
-                        width: 50vw;
+                        width: 70vw;
+                        left: 20vw;
                     }
 
                 }
@@ -49,7 +50,7 @@
             &:nth-of-type(3) {
                 .imageContainer {
                     top: -10vh;
-                    left: -25vw;
+                    left: -30vw;
                     width: 20vw;
                     height: 45vh;
                 }
@@ -72,7 +73,8 @@
                 @media screen and (max-width: 1024px) {
                     .imageContainer {
                         width: 50vw;
-                        left: 20vw;
+                        left: 2vw;
+                        top: 10vh;
                     }
 
                 }
@@ -81,7 +83,7 @@
             &:nth-of-type(5) {
                 .imageContainer {
                     top: 25vh;
-                    left: 5vw;
+                    left: 30vw;
                     width: 20vw;
                     height: 25vh;
                 }
@@ -89,6 +91,7 @@
                 @media screen and (max-width: 1024px) {
                     .imageContainer {
                         width: 50vw;
+                        left: 25vw;
                     }
 
                 }
@@ -99,6 +102,21 @@
                     top: 27.5vh;
                     left: -22.5vw;
                     width: 30vw;
+                    height: 25vh;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    .imageContainer {
+                        width: 70vw;
+                    }
+
+                }
+            }
+            &:nth-of-type(7) {
+                .imageContainer {
+                    top: 27.5vh;
+                    left: 4vw;
+                    width: 50vw;
                     height: 25vh;
                 }
 

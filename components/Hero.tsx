@@ -55,7 +55,7 @@ export const products = [
     title: "Aceternity UI",
     link: "/",
     thumbnail:
-      "/flowergirl.jpg",
+      "/AD.jpg",
   },
   {
     title: "Tailwind Master Kit",
@@ -67,13 +67,13 @@ export const products = [
     title: "SmartBridge",
     link: "/",
     thumbnail:
-      "/maze.jpg",
+      "/joker.jpg",
   },
   {
     title: "Renderwork Studio",
     link: "/",
     thumbnail:
-      "/goldman.jpg",
+      "/culture.png",
   },
 
   {
@@ -98,6 +98,6 @@ export const products = [
     title: "E Free Invoice",
     link: "/",
     thumbnail:
-      "/Earth_Inc.png",
+      "/ecommerce.png",
   },
 ];

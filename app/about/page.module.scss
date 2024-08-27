@@ -1,14 +1,16 @@
 .main{
     display: flex;
     flex-direction: column;
-    position: relative;
     height: auto;
     background-color: darkgrey;
+    position: relative;
 }
 .container{
     margin-top: 10vh;
     min-height: 100vh;
+    position: relative;
     .body{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
