@@ -106,11 +106,11 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="mx-auto py-40 pt-[20vh] px-4 text-center flex justify-center items-center flex-col relative">
-      <h1 className="text-[7vw] md:text-7xl font-bold text-white w-[90%]"> 
-        Revolutionizing Digital Experiences.
+      <h1 className="text-[7vw] md:text-7xl font-bold text-white w-[90%]">
+        Crafting Digital Artistry with Code and Creativity - Isaac ‘Adrian’
       </h1>
       <p className="text-base md:text-xl mt-8 text-neutral-200">
-        Elevating Brands to the Forefront of Online Success. Pioneering Innovation, Redefining Digital Excellence. 
+        Frontend Developer, Artist, Technical Analyst, and Web3 Enthusiast
       </p>
     </div>
   );

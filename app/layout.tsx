@@ -4,7 +4,7 @@ import { Navbar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Trader AD",
-  description: "Genius Philiantropist Billionaire Trader",
+  description: "Frontend Developer, Artist, Technical Analyst, and Web3 Enthusiast",
 };
 
 export default function RootLayout({

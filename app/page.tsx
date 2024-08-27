@@ -26,15 +26,11 @@ const Home: React.FC = () => {
             <AnimatePresence mode='wait'>
                 {isLoading && <Preloader key="preloader" />}
             </AnimatePresence>
-            <AnimatePresence mode='wait'>
-                {!isLoading && (
                     <>
                         <Hero key="hero" />
                         <Explore key="explore" />
                         <Footer key="footer" />
                     </>
-                )}
-            </AnimatePresence>
         </main>
     );
 };

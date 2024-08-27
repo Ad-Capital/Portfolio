@@ -6,8 +6,8 @@ import { Footer } from '@/components';
 
 interface FooterVariant {
     [key: string]: any;
-  }
-  
+}
+
 export default function index() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -24,13 +24,13 @@ export default function index() {
                     <div className={styles.subbody}>
                         <div className='flex flex-col'>
                             <span>
-                                <img src="sandman.jpg" alt="" className='object-contain'/>
+                                <img src="sandman.jpg" alt="" className='object-contain' />
                             </span>
                         </div>
                         <div className={styles.text}>
                             <motion.div>
                                 <h1 className={styles.contactText}>
-                                    let's talk about geting your BRAND to the next LEVEL.
+                                    Innovating at the Intersection of Code, Art, and Markets.
                                 </h1>
                             </motion.div>
                         </div>

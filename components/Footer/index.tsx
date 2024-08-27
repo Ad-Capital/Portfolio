@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>
-        <p>let's talk about getting your BRAND to the next LEVEL.</p>
+        <p>Innovating at the Intersection of Code, Art, and Markets.</p>
       </div>
       <div className="sm:px-16 px-6 py-8 w-full relative mt-[60vh]">
         <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col gap-8">
@@ -87,22 +87,22 @@ export default function Footer() {
                 <div className="flex flex-row gap-4">
                   <span>
                     <Magnetic>
-                      <img src="facebook.svg" alt="" />
+                      <a href="https://www.facebook.com/ona.isaac.1"><img src="facebook.svg" alt="" /></a>
                     </Magnetic>
                   </span>
                   <span>
                     <Magnetic>
-                      <img src="instagram.svg" alt="" />
+                      <a href="https://www.instagram.com/ona.adrian"><img src="instagram.svg" alt="" /></a>
                     </Magnetic>
                   </span>
                   <span>
                     <Magnetic>
-                      <img src="linkedin.svg" alt="" />
+                      <a href="linkedin.com/in/ona-isaac"><img src="linkedin.svg" alt="" /></a>
                     </Magnetic>
                   </span>
                   <span>
                     <Magnetic>
-                      <img src="twitter.svg" alt="" />
+                      <a href="https://x.com/TraderAD_"><img src="twitter.svg" alt="" /></a>
                     </Magnetic>
                   </span>
                 </div>
