@@ -2,6 +2,7 @@ export interface World {
   id: string;
   imgUrl: string;
   title: string;
+  url: string;
 }
 
 export interface Feature {
@@ -15,26 +16,31 @@ export const exploreWorlds: World[] = [
     id: 'world-1',
     imgUrl: '/ecommerce.png',
     title: 'Roses Collection',
+    url: 'https://google.com',
   },
   {
     id: 'world-2',
     imgUrl: '/Blog.png',
     title: 'AD Hub',
+    url: 'https://google.com',
   },
   {
     id: 'world-3',
     imgUrl: '/Social.png',
     title: 'Social Network',
+    url: 'https://google.com',
   },
   {
     id: 'world-4',
     imgUrl: '/Earth_Inc.png',
     title: 'Earth Inc',
+    url: 'https://earth-inc.vercel.app/',
   },
   {
     id: 'world-5',
     imgUrl: '/estate.png',
     title: 'Realty',
+    url: 'https://google.com',
   },
 ];
 
