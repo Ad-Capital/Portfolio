@@ -36,9 +36,7 @@
             margin: 0px;
             margin-top: 10px;
             font-size: 2vw;
-            span{
-                position: relative;
-            }
+            text-align: center;
         }
         @media screen and (max-width: 430px) {
             p {
@@ -72,20 +70,21 @@
             }
             &:nth-of-type(3){
                 left: 27.5vw;
-                top: 40vh;
+                top: 60vh;
                 height: 25vh;
-                width: 20vh;
+                width: 25vh;
                 z-index: 3;
             }
             @media screen and (max-width: 430px) {
                 &:nth-of-type(3) {
                     left: 2vw;
+                    top: 70vh;
                 }
     
             }
             @media screen and (max-width: 430px) {
                 &:nth-of-type(2) {
-                    left: 32vw;
+                    left: 32%;
                 }
     
             }

@@ -63,13 +63,13 @@ export default function Footer() {
         </div>
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>
-        <p>Innovating at the Intersection of Code, Art, and Markets.</p>
+        <p>Pioneering the Future of Digital Design and Development.</p>
       </div>
       <div className="sm:px-16 px-6 py-8 w-full relative mt-[60vh]">
         <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col gap-8">
           <div className="flex flex-col">
-            <Link href="/contact" className={styles.buttonContainer}>
-              <div className='flex flex-row w-full font-bold justify-end items-end'>
+            <Link href="/contact">
+              <div className='flex flex-row w-full font-bold justify-end items-end outline-none'>
                 <Rounded backgroundColor={"black"}>
                   <p className='text-white'>Get In Touch</p>
                 </Rounded>

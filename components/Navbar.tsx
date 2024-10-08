@@ -28,14 +28,7 @@ const NavBar: React.FC = () => {
         >
           <Link href='/'>
             <div className='flex justify-center items-center'>
-              <h1 className="text-white font-bold text-3xl">AD</h1>
-              {/* <Image
-                src='/logo.png'
-                alt='logo'
-                width={77.4}
-                height={77.4}
-                className=''
-              /> */}
+              <Image src={'/AD Hub W.png'} width={70} height={70} alt="logo"/>
             </div>
           </Link>
 

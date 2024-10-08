@@ -30,7 +30,7 @@ export default function index() {
                         <div className={styles.text}>
                             <motion.div>
                                 <h1 className={styles.contactText}>
-                                    Innovating at the Intersection of Code, Art, and Markets.
+                                    Pioneering the Future of Digital Design and Development.
                                 </h1>
                             </motion.div>
                         </div>

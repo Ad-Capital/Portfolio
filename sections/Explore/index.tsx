@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './style.module.scss';
-import { exploreWorlds } from '@/common/index';
+import { exploreProjects } from '@/common/index';
 import { staggerContainer } from '@/utils/motion';
 import { ExploreCard, TitleText, TypingText } from '@/components';
 
@@ -18,7 +18,7 @@ export default function Index() {
   const x2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
 
-  const [active, setActive] = useState<string>('world-2');
+  const [active, setActive] = useState<string>('project-2');
 
   return (
     <div ref={container} className={styles.slidingImages}>
@@ -35,14 +35,14 @@ export default function Index() {
             textStyles=""
           />
           <div className={styles.exploreCards}>
-            {exploreWorlds.map((world, index) => (
+            {exploreProjects.map((project, index) => (
               <ExploreCard
-                key={world.id}
-                {...world}
+                key={project.id}
+                {...project}
                 index={index}
                 active={active}
                 handleClick={setActive}
-                url={world.url} // Pass the URL
+                url={project.url}
               />
             ))}
           </div>

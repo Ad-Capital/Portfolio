@@ -1,0 +1,136 @@
+.container {
+    padding-top: 80px;
+    margin-bottom: 80px;
+
+    .el {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact {
+        max-width: 576px;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 48px;
+
+        h3 {
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 600;
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            color: white;
+            margin-top: 12px;
+        }
+
+        form {
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+
+            >*+* {
+                margin-top: 1.75rem;
+            }
+
+            label {
+                >*+* {
+                    margin-top: 0.75rem;
+                }
+
+                span {
+                    color: white;
+                }
+
+                textarea {
+                    width: 100%; // w-full
+                    background-color: #1f2937; // bg-black-300 (you might want to define your custom color variable)
+                    padding-left: 1.25rem; // px-5
+                    padding-right: 1.25rem; // px-5
+                    padding-top: 0.5rem; // py-2
+                    padding-bottom: 0.5rem; // py-2
+                    min-height: 3.5rem; // min-h-14 (assuming 1rem = 4px, adjust if necessary)
+                    border-radius: 0.5rem; // rounded-lg
+                    color: #f9fafb; // text-white-800 (you might want to define your custom color variable)
+                    font-size: 1.125rem; // text-lg
+
+                    // Placeholder styles
+                    &::placeholder {
+                        color: #d1d5db; // placeholder:text-white-500 (you might want to define your custom color variable)
+                    }
+
+                    // Box shadow styles
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.2); // shadow-black-200 shadow-2xl
+
+                    // Focus styles
+                    &:focus {
+                        outline: none; // focus:outline-none
+
+                    }
+                }
+
+                input {
+                    width: 100%; // w-full
+                    background-color: #1f2937; // bg-black-300 (you might want to define your custom color variable)
+                    padding-left: 1.25rem; // px-5
+                    padding-right: 1.25rem; // px-5
+                    padding-top: 0.5rem; // py-2
+                    padding-bottom: 0.5rem; // py-2
+                    min-height: 3.5rem; // min-h-14 (assuming 1rem = 4px, adjust if necessary)
+                    border-radius: 0.5rem; // rounded-lg
+                    color: #f9fafb; // text-white-800 (you might want to define your custom color variable)
+                    font-size: 1.125rem; // text-lg
+
+                    // Placeholder styles
+                    &::placeholder {
+                        color: #d1d5db; // placeholder:text-white-500 (you might want to define your custom color variable)
+                    }
+
+                    // Box shadow styles
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.2); // shadow-black-200 shadow-2xl
+
+                    // Focus styles
+                    &:focus {
+                        outline: none; // focus:outline-none
+
+                    }
+
+                }
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                z-index: 3;
+
+                img {
+                    padding-left: 5px;
+                    width: 0.825rem;
+                    height: 0.825rem;
+                    object-fit: contain;
+                }
+
+            }
+        }
+    }
+    .buttoncontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

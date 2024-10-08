@@ -23,6 +23,28 @@ interface NavVariant extends Variants {
     };
   };
 }
+interface slideIn extends Variants {
+  hidden: {
+    opacity: number;
+    x: number | string;
+    transition: {
+      type: string;
+      stiffness?: number;
+      damping?: number;
+      delay?: number;
+    };
+  };
+  show: {
+    opacity: number;
+    x: number;
+    transition: {
+      type: string;
+      stiffness?: number;
+      damping?: number;
+      delay?: number;
+    };
+  };
+}
 
 export const navVariants: NavVariant = {
   hidden: {
@@ -45,27 +67,26 @@ export const navVariants: NavVariant = {
   },
 };
 
-export const slideIn = (
-  direction: string,
-  type: string,
-  delay: number,
-  duration: number
-) => ({
+export const slideIn: slideIn = {
   hidden: {
-    x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
-    y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
-  },
-  show: {
-    x: 0,
-    y: 0,
+    opacity: 0,
+    x: -50,
     transition: {
-      type,
-      delay,
-      duration,
-      ease: 'easeOut',
+      type: 'spring',
+      stiffness: 300,
+      damping: 140,
     },
   },
-});
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      delay: 0.2,
+    },
+  },
+};
 
 type StaggerContainerFunction = (staggerChildren: number, delayChildren: number) => Variants;
 

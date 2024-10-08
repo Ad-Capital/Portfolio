@@ -29,5 +29,5 @@ export {
     TitleText,
     Footer,
     Form,
-    LottieAnimation
+    LottieAnimation,
 }

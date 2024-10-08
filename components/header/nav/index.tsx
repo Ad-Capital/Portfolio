@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../anim';
 import Link from '@/components/header/nav/Link';
+import Footer from "./Footer";
 import Curve from '@/components/header/nav/Curve';
 
 interface NavItem {
@@ -45,6 +46,7 @@ export default function Index(): JSX.Element {
             <Link key={index} data={{ ...data, index }} isActive={selectedIndicator === data.href} setSelectedIndicator={setSelectedIndicator} />
           ))}
         </div>
+        <Footer />
       </div>
       <Curve />
     </motion.div>

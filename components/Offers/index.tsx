@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import styles from './style.module.scss';
+import { navVariants, slideIn } from "@/utils/motion";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const word = "Meet the Front-End Architect Shaping Tomorrow's Web Experiences.";
@@ -16,26 +17,41 @@ export default function Index() {
     const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
     return (
         <div ref={container} className={styles.container}>
-             <div className={styles.body}>
+            <div className={styles.body}>
                 <h1>What To Expect</h1>
                 <h1></h1>
                 <div className={styles.subbody}>
                     <div className={styles.word}>
-                        <h2>~Design</h2>
+                        <motion.h2
+                            variants={slideIn}
+                            initial="hidden"
+                            whileInView="show">
+                            ➫Design
+                        </motion.h2>
                         <p>
-                            In my design process, I blend creativity with functionality. Expect meticulously crafted visuals that reflect your brand's identity, guiding users seamlessly through their digital journey.
+                            Expect creativity unleashed. <br/> I'll take your vision and turn it into something that not only looks great but feels right. <br/>Whether it's clean, bold or playful, I make sure your design stands out and speaks to your brand.
                         </p>
                     </div>
                     <div className={styles.word}>
-                        <h2>~Development</h2>
+                        <motion.h2
+                            variants={slideIn}
+                            initial="hidden"
+                            whileInView="show">
+                            ➫Development
+                        </motion.h2>
                         <p>
-                            As a front-end developer, I'm dedicated to precision and innovation. Count on me to bring your visions to life with clean, efficient code that delivers flawless user experiences across devices.
+                            It's all about making things work.<br/> I turn your design into a fully functional, smooth, and responsive website.<br/> From buttons that click pages that load fast, you'll get a site that performs beautifully on any device.
                         </p>
                     </div>
                     <div className={styles.word}>
-                        <h2>~All-Inclusive</h2>
+                        <motion.h2
+                            variants={slideIn}
+                            initial="hidden"
+                            whileInView="show">
+                            ➫All-Inclusive
+                        </motion.h2>
                         <p>
-                            When you choose me, you're getting more than just design or development – you're getting the full package. From concept to launch, I'm your partner in success, delivering holistic solutions that exceed expectations. Let's craft digital experiences that make a lasting impact together.
+                            Well, why choose when you can have both?<br/> with my all-inclusive package, you get the best of both worlds; killer design and solid development in one. <br/>It's the full experience, tailored just for you.
                         </p>
                     </div>
                 </div>

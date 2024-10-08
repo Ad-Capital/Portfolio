@@ -3,7 +3,7 @@ import "@/Styles/globals.css"
 import { Navbar } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Trader AD",
+  title: "Ona Adrian",
   description: "Frontend Developer, Artist, Technical Analyst, and Web3 Enthusiast",
 };
 

@@ -2,9 +2,9 @@
 
 import { useRef } from "react";
 import styles from './style.module.scss';
-import Picture1 from '@/public/medias/1.jpg';
-import Picture2 from '@/public/medias/2.jpg';
-import Picture3 from '@/public/medias/3.jpeg';
+import Picture1 from '@/public/Social.png';
+import Picture2 from '@/public/Blog.png';
+import Picture3 from '@/public/estate.png';
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -38,26 +38,48 @@ export default function Index() {
     return (
         <div ref={container} className={styles.container}>
             <div className={styles.body}>
-                <h1>About</h1>
-                <h1>Trader AD</h1>
+                <h1>About Me</h1>
                 <div className={styles.word}>
                     <p>
-                        Welcome to my corner of the web. I'm Adrian, a multifaceted professional excelling as a Designer, Front-End Developer, and Technical Analyst.
+                        Hey, I’m Adrian, also known as Isaac.
                     </p>
                     <p>
-                        In addition to my expertise in web technology and financial analysis, I find inspiration in the realms of music and art. Whether it's exploring new melodies or experimenting with different artistic mediums, I thrive on creative expression beyond Web Tech and the financial world.
+                        I’m a frontend developer, artist, and digital creator who’s all about making unique digital experiences. I combine creativity and tech know-how to bring ideas to life, building stuff that works great and really connects with people.
+                    </p>
+                </div>
+                <div className={styles.word}>
+                    <span className={styles.title}>What I Do</span>
+                    <p>
+                        I focus on frontend development, using modern tools like React and Next.js, with TypeScript to make sure everything's solid and scalable. On top of coding, I also create sleek user interfaces that are both functional and great to look at.
+                    </p>
+                </div>
+                <div className={styles.word}>
+                    <span className={styles.title}>My Journey</span>
+                    <p>
+                        Over the years, I’ve taken on all kinds of projects that mix art, tech, and innovation. Whether it’s designing portfolios, crafting digital experiences, or diving deep into Web3, I’m always about pushing boundaries and creating work that leaves a mark.
                     </p>
                     <p>
-                        As a Designer, I infuse aesthetics with functionality, creating designs that not only reflect your brand identity but also elevate the user experience. Whether it's crafting pixel-perfect layouts or selecting the perfect color palette, I'm dedicated to delivering designs that resonates with your audience.
+                        Some of the standout projects I’ve worked on include:
                     </p>
                     <p>
-                        As a Front-End Developer, I breathe life into designs, meticulously ensuring they not only to look amazing but also provide seamless user experiences across devices. With a keen eye for detail, I strive to create interfaces that captivate and engage users from the moment they land on a page.
+                        <span className={styles.title}>Earth Inc</span> 
+                        <br />
+                        I developed a platform focused on the buying and selling of art,
+                        providing a space for artists to showcase and sell their work.
+                        The platform also includes features like user profiles, secure
+                        payment integration, a marketplace for art-related products,
+                        and a community space where users can interact, share insights,
+                        and explore curated collections.
                     </p>
                     <p>
-                        As a Techincal Analyst specializing in trading, I rely on comprehensive market research and deep understanding of market dynamics to make informed trading decisions. By analysing price action, market sentiment, and macroeconomic trends, I identify strategic opportunities and optimize trading strategies for sucess without relying on traditional technical indicators.
-                    </p>
-                    <p>
-                        With a passion for innovation and a commitment to perfection, I'm dedicated to bringing your vision to life in the digital realm. Let's collaborate to create something extraordinary.
+                        <span className={styles.title}>AD Hub:</span>
+                        <br />
+                        I’m currently developing AD Hub, a blog website that covers a diverse range of topics
+                        including art, fashion, music, food, travel, design, coding, and technical analysis in
+                        forex trading. The platform is designed to be visually engaging and user-friendly,
+                        blending modern design elements with a seamless user experience. From content layout
+                        to functionality, the goal is to create a space where readers can easily explore and
+                        engage with insightful articles across multiple industries.
                     </p>
                 </div>
             </div>
@@ -68,6 +90,7 @@ export default function Index() {
                             src={src}
                             placeholder="blur"
                             alt="image"
+                            className="rounded-xl"
                         />
                     </motion.div>
                 ))}

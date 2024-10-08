@@ -2,9 +2,9 @@
 
 import { useRef } from "react";
 import styles from '@/app/about/page.module.scss';
-import Picture1 from '@/public/medias/4.jpg';
-import Picture2 from '@/public/medias/5.jpg';
-import Picture3 from '@/public/medias/6.jpg';
+import Picture2 from '@/public/medias/2.jpg';
+import Picture1 from '@/public/medias/Adrian.png';
+import Picture3 from '@/public/medias/3.jpeg';
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -56,6 +56,7 @@ export default function Index() {
                             src={src}
                             placeholder="blur"
                             alt="image"
+                            className="rounded-xl"
                         />
                     </motion.div>
                 ))}
