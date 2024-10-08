@@ -10,6 +10,18 @@ const Home: React.FC = () => {
   const pathname = usePathname();
 
   useEffect(() => {
+    const body = document.body;
+    if (isActive) {
+      body.classList.add('no-scroll');
+    } else {
+      body.classList.remove('no-scroll');
+    }
+    return () => {
+      body.classList.remove('no-scroll');
+    };
+  }, [isActive]);
+  
+  useEffect(() => {
     if (isActive) setIsActive(false);
   }, [pathname]);
 

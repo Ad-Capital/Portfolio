@@ -16,6 +16,11 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+
 .nav {
   color: white;
   font-weight: 700;

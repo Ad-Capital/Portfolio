@@ -18,10 +18,6 @@ const navItems: NavItem[] = [
     href: "/",
   },
   {
-    title: "Explore",
-    href: "/#explore",
-  },
-  {
     title: "About",
     href: "/about",
   },
@@ -40,7 +36,7 @@ export default function Index(): JSX.Element {
       <div className={styles.body}>
         <div onMouseLeave={() => setSelectedIndicator(pathname)} className={styles.nav}>
           <div className={styles.header}>
-            <p>Navigation</p>
+            <p>Menu</p>
           </div>
           {navItems.map((data, index) => (
             <Link key={index} data={{ ...data, index }} isActive={selectedIndicator === data.href} setSelectedIndicator={setSelectedIndicator} />

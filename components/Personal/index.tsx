@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import styles from './style.module.scss';
-import Picture1 from '@/public/Social.png';
+import Picture1 from '@/public/Earth_Inc.png';
 import Picture2 from '@/public/Blog.png';
 import Picture3 from '@/public/estate.png';
 import Image from "next/image";
