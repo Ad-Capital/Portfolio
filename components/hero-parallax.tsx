@@ -110,7 +110,7 @@ export const Header = () => {
         I Design. I Develop. I Create.
       </h1>
       <p className="text-base md:text-xl mt-8 text-neutral-200">
-        Hey, I’m Adrian. Come along let’s build something awesome together.
+        Hey, I’m Adrian. Let's work together to create something truly remarkable.
       </p>
     </div>
   );
