@@ -4,6 +4,12 @@ export interface Project {
   title: string;
   url: string;
 }
+export interface Designs {
+  id: string;
+  imgUrl: string;
+  title: string;
+  url: string;
+}
 
 export const exploreProjects: Project[] = [
   {
@@ -37,3 +43,12 @@ export const exploreProjects: Project[] = [
     url: 'https://google.com',
   },
 ];
+
+export const designs: Designs[] = [
+  {
+    id: 'project-5',
+    imgUrl: '/estate.png',
+    title: 'Realty',
+    url: 'https://google.com',
+  },
+]

@@ -6,9 +6,10 @@
     align-items: center;
     justify-content: center;
     padding: 15px 60px 15px 60px;
-    background-color: #01127e;
-    outline: none;
-    box-shadow: none;
+    background-color: darkgray;
+    border: 1px solid gray;
+    // outline: none;
+    // box-shadow: none;
 
     p{
         position: relative;
@@ -18,7 +19,7 @@
 
     &:hover{
         p{
-            color: white;
+            color: black;
         }
     }
 }

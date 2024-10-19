@@ -41,7 +41,7 @@ export default function Index() {
                 <h1>About Me</h1>
                 <div className={styles.word}>
                     <p>
-                        Hey, I’m Adrian, also known as Isaac.
+                        Hey again, I’m Adrian, also known as Isaac.
                     </p>
                     <p>
                         I’m a frontend developer, artist, and digital creator who’s all about making unique digital experiences. I combine creativity and tech know-how to bring ideas to life, building stuff that works great and really connects with people.

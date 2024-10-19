@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { slideUp } from '@/components/Footer/animation';
+import { slideUp } from '@/sections/Footer/animation';
 
 
 export const HeroParallax = ({

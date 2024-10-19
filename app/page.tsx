@@ -2,8 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Footer, Hero, Preloader } from '@/components';
-import { Contact, Explore } from '@/sections';
+import { Hero, Preloader } from '@/components';
+import Footer from "@/sections/Footer"
+import { Explore } from '@/sections';
 
 const Home: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -27,9 +28,9 @@ const Home: React.FC = () => {
                 {isLoading && <Preloader key="preloader" />}
             </AnimatePresence>
                     <>
-                        <Hero key="hero" />
-                        <Explore key="explore" />
-                        <Footer key="footer" />
+                        <Hero />
+                        <Explore />
+                        <Footer />
                     </>
         </main>
     );

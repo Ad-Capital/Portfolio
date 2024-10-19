@@ -6,6 +6,7 @@ import styles from './style.module.scss';
 import { exploreProjects } from '@/common/index';
 import { staggerContainer } from '@/utils/motion';
 import { ExploreCard, TitleText, TypingText } from '@/components';
+import Rounded from "@/common/RoundedButton"
 
 export default function Index() {
   const container = useRef<HTMLDivElement>(null);
@@ -47,6 +48,15 @@ export default function Index() {
             ))}
           </div>
         </motion.div>
+        <div className={styles.buttoncontainer}>
+          <a href="/work">
+            <Rounded backgroundColor='white'>
+              <p>More work <sup>&#8599;</sup></p>
+            </Rounded>
+          </a>
+
+        </div>
+
       </section>
       <motion.div style={{ height }} className={styles.circleContainer}>
         <div className={styles.circle}></div>

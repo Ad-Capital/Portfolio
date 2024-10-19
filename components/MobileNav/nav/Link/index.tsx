@@ -1,19 +1,22 @@
 import styles from './style.module.scss';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { slide, scale } from '../../anim';
+import { slide, scale } from '../../animation';
 
-interface Props {
-  data: {
-    title: string;
-    href: string;
-    index: number;
-  };
+// Define types for props
+interface NavItem {
+  title: string;
+  href: string;
+  index: number;
+}
+
+interface LinkProps {
+  data: NavItem;
   isActive: boolean;
   setSelectedIndicator: (href: string) => void;
 }
 
-const Index: React.FC<Props> = ({ data, isActive, setSelectedIndicator }) => {
+export default function Index({ data, isActive, setSelectedIndicator }: LinkProps) {
   const { title, href, index } = data;
 
   return (
@@ -26,10 +29,12 @@ const Index: React.FC<Props> = ({ data, isActive, setSelectedIndicator }) => {
       animate="enter"
       exit="exit"
     >
-      <motion.div variants={scale} animate={isActive ? "open" : "closed"} className={styles.indicator}></motion.div>
+      <motion.div
+        variants={scale}
+        animate={isActive ? 'open' : 'closed'}
+        className={styles.indicator}
+      ></motion.div>
       <Link href={href}>{title}</Link>
     </motion.div>
   );
-};
-
-export default Index;
+}
