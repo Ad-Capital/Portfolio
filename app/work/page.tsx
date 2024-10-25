@@ -14,18 +14,18 @@ import Footer from "@/sections/Footer";
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        (async () => {
-            const LocomotiveScroll = (await import('locomotive-scroll')).default;
-            const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
 
-            setTimeout(() => {
-                setIsLoading(false);
-                document.body.style.cursor = 'default';
-                window.scrollTo(0, 0);
-            }, 2000);
-        })();
-    }, []);
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = 'default';
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
 
   const [activeSection, setActiveSection] = useState<'design' | 'development'>('design');
   const container = useRef<HTMLDivElement>(null);
@@ -37,6 +37,8 @@ const Index = () => {
   const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+  const x1 = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const x2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
   const handleNavClick = (section: 'design' | 'development') => {
     if (section !== activeSection) setActiveSection(section);
@@ -146,6 +148,11 @@ const Index = () => {
           </AnimatePresence>
         </div>
       </div>
+      <motion.div style={{ height }} className={styles.circleContainer}>
+        <div className={styles.circle}></div>
+      </motion.div>
+      <Footer />
+
     </main>
 
   );

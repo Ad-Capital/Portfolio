@@ -15,20 +15,20 @@ export const exploreProjects: Project[] = [
   {
     id: 'project-1',
     imgUrl: '/ecommerce.png',
-    title: 'Roses Collection',
-    url: 'https://google.com',
+    title: "Roses' Collection",
+    url: '/notfound',
   },
   {
     id: 'project-2',
     imgUrl: '/Blog.png',
     title: 'AD Hub',
-    url: 'https://google.com',
+    url: '/notfound',
   },
   {
     id: 'project-3',
     imgUrl: '/Social.png',
-    title: 'Social Network',
-    url: 'https://google.com',
+    title: 'Relations',
+    url: '/notfound',
   },
   {
     id: 'project-4',
@@ -39,16 +39,7 @@ export const exploreProjects: Project[] = [
   {
     id: 'project-5',
     imgUrl: '/estate.png',
-    title: 'Realty',
-    url: 'https://google.com',
+    title: 'Estate AD',
+    url: '/notfound',
   },
 ];
-
-export const designs: Designs[] = [
-  {
-    id: 'project-5',
-    imgUrl: '/estate.png',
-    title: 'Realty',
-    url: 'https://google.com',
-  },
-]

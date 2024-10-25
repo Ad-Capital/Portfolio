@@ -8,6 +8,7 @@ import Aboutloader from "@/sections/About/Aboutloader"
 import Headline from "@/sections/About/Headline"
 import Offers from "@/sections/About/Offers"
 import Personal from "@/sections/About/Personal"
+import Footer from "@/sections/Footer"
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ export default function Home() {
             <Headline />
             <Personal />
             <Offers />
+            <Footer />
         </main>
 
     );

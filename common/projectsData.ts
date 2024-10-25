@@ -5,6 +5,9 @@ import Picture2 from '@/public/Blog.png';
 import Picture3 from '@/public/estate.png';
 import Picture4 from '@/public/ecommerce.png';
 import Picture5 from '@/public/marketPlace.jpg';
+import Picture6 from '@/public/travelnorth.jpg';
+import Picture7 from '@/public/meta.jpg';
+import Picture8 from '@/public/girl.jpg';
 
 // Define the structure for each project
 export type Project = {
@@ -21,13 +24,13 @@ export const designProjects: Project[] = [
     description: '4th, Dec, 2024',
   },
   {
-    src: [Picture3, Picture4, Picture2],
-    title: 'AD Hub',
+    src: [Picture6, Picture4, Picture2],
+    title: 'TravelNorth',
     description: '4th, Dec, 2024',
   },
   {
-    src: [Picture5, Picture1, Picture4],
-    title: 'Estate Management',
+    src: [Picture7, Picture1, Picture4],
+    title: 'VR Fest',
     description: '4th, Dec, 2024',
   },
   {
@@ -36,8 +39,8 @@ export const designProjects: Project[] = [
     description: '4th, Dec, 2024',
   },
   {
-    src: [Picture5, Picture1, Picture4],
-    title: 'Roses Collection',
+    src: [Picture8, Picture4, Picture4],
+    title: "Roses' Collection",
     description: '4th, Dec, 2024',
   },
 ];
@@ -46,27 +49,27 @@ export const designProjects: Project[] = [
 export const developmentProjects: Project[] = [
   {
     src: [Picture4, Picture5, Picture3],
-    title: 'E-commerce Platform',
+    title: "Roses' Collection",
     description: '4th, Dec, 2024',
   },
   {
-    src: [Picture1, Picture2, Picture4],
-    title: 'Estate App',
-    description: '4th, Dec, 2024',
-  },
-  {
-    src: [Picture2, Picture3, Picture5],
-    title: 'Marketplace Website',
+    src: [Picture3, Picture2, Picture4],
+    title: 'Estate AD',
     description: '4th, Dec, 2024',
   },
   {
     src: [Picture2, Picture3, Picture5],
-    title: 'Marketplace Website',
+    title: 'AD Hub',
     description: '4th, Dec, 2024',
   },
   {
     src: [Picture2, Picture3, Picture5],
-    title: 'Marketplace Website',
+    title: 'CodeLand',
+    description: '4th, Dec, 2024',
+  },
+  {
+    src: [Picture4, Picture3, Picture5],
+    title: 'Shop AD',
     description: '4th, Dec, 2024',
   },
 ];
