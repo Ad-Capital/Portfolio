@@ -16,19 +16,19 @@ export const exploreProjects: Project[] = [
     id: 'project-1',
     imgUrl: '/ecommerce.png',
     title: "Roses' Collection",
-    url: '/notfound',
+    url: '/404',
   },
   {
     id: 'project-2',
     imgUrl: '/Blog.png',
     title: 'AD Hub',
-    url: '/notfound',
+    url: '/404',
   },
   {
     id: 'project-3',
     imgUrl: '/Social.png',
     title: 'Relations',
-    url: '/notfound',
+    url: '/404',
   },
   {
     id: 'project-4',
@@ -38,8 +38,8 @@ export const exploreProjects: Project[] = [
   },
   {
     id: 'project-5',
-    imgUrl: '/estate.png',
-    title: 'Estate AD',
-    url: '/notfound',
+    imgUrl: '/marketPlace.jpg',
+    title: 'Nft Marketplace',
+    url: '/404',
   },
 ];

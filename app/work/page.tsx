@@ -72,7 +72,7 @@ const Index = () => {
         <h3 className={styles.projectTitle}>{project.title}</h3>
         <p className={styles.projectDescription}>{project.description}</p>
       </div>
-      <Link href='/work/notfound'>
+      <Link href='/404'>
         <Rounded backgroundColor="white">
           <p>Case Study</p>
         </Rounded>
