@@ -72,9 +72,9 @@ const Index = () => {
         <h3 className={styles.projectTitle}>{project.title}</h3>
         <p className={styles.projectDescription}>{project.description}</p>
       </div>
-      <Link href='/404'>
+      <Link href={project.href} className={styles.link}>
         <Rounded backgroundColor="white">
-          <p>Case Study</p>
+          <p>Live Site</p>
         </Rounded>
       </Link>
     </motion.div>
@@ -94,11 +94,11 @@ const Index = () => {
                 onClick={() => handleNavClick('design')}
                 aria-pressed={activeSection === 'design'}
               >
-                <span>Design</span>
+                <span>Selected Works</span>
                 <div className={styles.indicator}></div>
               </button>
             </Magnetic>
-            <Magnetic>
+            {/* <Magnetic>
               <button
                 className={`${styles.el} ${activeSection === 'development' ? styles.active : ''}`}
                 onClick={() => handleNavClick('development')}
@@ -107,7 +107,7 @@ const Index = () => {
                 <span>Development</span>
                 <div className={styles.indicator}></div>
               </button>
-            </Magnetic>
+            </Magnetic> */}
           </nav>
         </div>
 

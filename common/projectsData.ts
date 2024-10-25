@@ -1,8 +1,8 @@
 // projectsData.ts
 import { StaticImageData } from 'next/image';
 import Picture1 from '@/public/Earth_Inc.png';
-import Picture2 from '@/public/Blog.png';
-import Picture3 from '@/public/estate.png';
+import Picture2 from '@/public/earth2.png';
+import Picture3 from '@/public/earth3.png';
 import Picture4 from '@/public/ecommerce.png';
 import Picture5 from '@/public/marketPlace.jpg';
 import Picture6 from '@/public/travelnorth.jpg';
@@ -24,6 +24,7 @@ export type Project = {
   src: StaticImageData[];
   title: string;
   description: string;
+  href: string;
 };
 
 // Define design projects
@@ -32,26 +33,31 @@ export const designProjects: Project[] = [
     src: [Picture1, Picture2, Picture3], // Multiple images per project
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
+    href: "/"
   },
   {
     src: [Picture9, Picture10, Picture11],
     title: 'Okuta Hub',
     description: '8th, Mar, 2024',
+    href: "/"
   },
   {
     src: [Picture12, Picture13, Picture14],
     title: 'Ruut Chat',
     description: '4th, Dec, 2023',
+    href: "/"
   },
   {
     src: [Picture15, Picture15, Picture15],
     title: 'African Sasaeng',
     description: '16th, Jan, 2024',
+    href: "/"
   },
   {
     src: [Picture16, Picture17, Picture18],
     title: "AD Hub",
     description: '19th, Jun, 2024',
+    href: "/"
   },
 ];
 
@@ -61,25 +67,30 @@ export const developmentProjects: Project[] = [
     src: [Picture16, Picture17, Picture18],
     title: "AD Hub",
     description: '19th, Jun, 2024',
+    href: "/"
   },
   {
     src: [Picture15, Picture15, Picture15],
     title: 'African Sasaeng',
     description: '16th, Jan, 2024',
+    href: "/"
   },
   {
     src: [Picture9, Picture10, Picture11],
     title: 'Okuta Hub',
     description: '8th, Mar, 2024',
+    href: "/"
   },
   {
     src: [Picture12, Picture13, Picture14],
     title: 'Ruut Chat',
     description: '4th, Dec, 2023',
+    href: "/"
   },
   {
     src: [Picture1, Picture2, Picture3], // Multiple images per project
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
+    href: "/"
   },
 ];
