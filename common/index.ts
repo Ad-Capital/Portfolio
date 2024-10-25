@@ -14,21 +14,21 @@ export interface Designs {
 export const exploreProjects: Project[] = [
   {
     id: 'project-1',
-    imgUrl: '/ecommerce.png',
-    title: "Roses' Collection",
-    url: '/404',
+    imgUrl: '/Okutahub.png',
+    title: "OkutaHub",
+    url: '/https://www.okutahub.com/',
   },
   {
     id: 'project-2',
-    imgUrl: '/Blog.png',
+    imgUrl: '/HubLanding.png',
     title: 'AD Hub',
     url: '/404',
   },
   {
     id: 'project-3',
-    imgUrl: '/Social.png',
-    title: 'Relations',
-    url: '/404',
+    imgUrl: '/Ruut.png',
+    title: 'Ruut Chat',
+    url: '/https://ruut.chat',
   },
   {
     id: 'project-4',
