@@ -87,15 +87,15 @@ export default function Footer() {
                 <div className={styles.socials}>
                   <span>
                     <Magnetic>
-                      <a href="https://www.facebook.com/ona.isaac.1"><img src="facebook.svg" alt="" /></a>
+                      <a href="https://wa.me/+2349029458058"><img src="whatsapp.svg" alt="whatsapp" /></a>
                     </Magnetic>
                   </span>
                   <span>
                     <Magnetic>
-                      <a href="https://www.instagram.com/ona.adrian"><img src="instagram.svg" alt="" /></a>
+                      <a href="mailto:isaacona2@gmail.com"><img src="email.png" alt="email" /></a>
                     </Magnetic>
                   </span>
-                  <span>
+                  {/* <span>
                     <Magnetic>
                       <a href="linkedin.com/in/ona-isaac"><img src="linkedin.svg" alt="" /></a>
                     </Magnetic>
@@ -104,7 +104,7 @@ export default function Footer() {
                     <Magnetic>
                       <a href="https://x.com/TraderAD_"><img src="twitter.svg" alt="" /></a>
                     </Magnetic>
-                  </span>
+                  </span> */}
                 </div>
               </span>
             </div>
