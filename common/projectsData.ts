@@ -33,31 +33,31 @@ export const designProjects: Project[] = [
     src: [Picture1, Picture2, Picture3], // Multiple images per project
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
-    href: "/"
+    href: "https://earth-inc.vercel.app/"
   },
   {
     src: [Picture9, Picture10, Picture11],
     title: 'Okuta Hub',
     description: '8th, Mar, 2024',
-    href: "/"
+    href: "https://www.okutahub.com/"
   },
   {
     src: [Picture12, Picture13, Picture14],
     title: 'Ruut Chat',
     description: '4th, Dec, 2023',
-    href: "/"
+    href: "https://ruut.chat"
   },
   {
     src: [Picture15, Picture15, Picture15],
     title: 'African Sasaeng',
     description: '16th, Jan, 2024',
-    href: "/"
+    href: "https://africansasaeng.com/?elementor_library=coming-soon"
   },
   {
     src: [Picture16, Picture17, Picture18],
     title: "AD Hub",
     description: '19th, Jun, 2024',
-    href: "/"
+    href: "/404"
   },
 ];
 
