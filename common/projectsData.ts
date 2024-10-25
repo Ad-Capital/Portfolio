@@ -8,6 +8,16 @@ import Picture5 from '@/public/marketPlace.jpg';
 import Picture6 from '@/public/travelnorth.jpg';
 import Picture7 from '@/public/meta.jpg';
 import Picture8 from '@/public/girl.jpg';
+import Picture9 from '@/public/Okutahub.png';
+import Picture10 from '@/public/Okutahub2.png';
+import Picture11 from '@/public/Okutahub3.png';
+import Picture12 from '@/public/Ruut.png';
+import Picture13 from '@/public/Ruut2.png';
+import Picture14 from '@/public/Ruut3.png';
+import Picture15 from '@/public/Africansasaeng.png';
+import Picture16 from '@/public/HubLanding.png';
+import Picture17 from '@/public/Blog.png';
+import Picture18 from '@/public/Africansasaeng.png';
 
 // Define the structure for each project
 export type Project = {
@@ -21,55 +31,55 @@ export const designProjects: Project[] = [
   {
     src: [Picture1, Picture2, Picture3], // Multiple images per project
     title: 'Earth Inc.',
-    description: '4th, Dec, 2024',
+    description: '15th, Oct, 2023',
   },
   {
-    src: [Picture6, Picture4, Picture2],
-    title: 'TravelNorth',
-    description: '4th, Dec, 2024',
+    src: [Picture9, Picture10, Picture11],
+    title: 'Okuta Hub',
+    description: '8th, Mar, 2024',
   },
   {
-    src: [Picture7, Picture1, Picture4],
-    title: 'VR Fest',
-    description: '4th, Dec, 2024',
+    src: [Picture12, Picture13, Picture14],
+    title: 'Ruut Chat',
+    description: '4th, Dec, 2023',
   },
   {
-    src: [Picture5, Picture1, Picture4],
-    title: 'NFT Marketplace',
-    description: '4th, Dec, 2024',
+    src: [Picture15, Picture15, Picture15],
+    title: 'African Sasaeng',
+    description: '16th, Jan, 2024',
   },
   {
-    src: [Picture8, Picture4, Picture4],
-    title: "Roses' Collection",
-    description: '4th, Dec, 2024',
+    src: [Picture16, Picture17, Picture18],
+    title: "AD Hub",
+    description: '19th, Jun, 2024',
   },
 ];
 
 // Define development projects
 export const developmentProjects: Project[] = [
   {
-    src: [Picture4, Picture5, Picture3],
-    title: "Roses' Collection",
-    description: '4th, Dec, 2024',
+    src: [Picture16, Picture17, Picture18],
+    title: "AD Hub",
+    description: '19th, Jun, 2024',
   },
   {
-    src: [Picture3, Picture2, Picture4],
-    title: 'Estate AD',
-    description: '4th, Dec, 2024',
+    src: [Picture15, Picture15, Picture15],
+    title: 'African Sasaeng',
+    description: '16th, Jan, 2024',
   },
   {
-    src: [Picture2, Picture3, Picture5],
-    title: 'AD Hub',
-    description: '4th, Dec, 2024',
+    src: [Picture9, Picture10, Picture11],
+    title: 'Okuta Hub',
+    description: '8th, Mar, 2024',
   },
   {
-    src: [Picture2, Picture3, Picture5],
-    title: 'CodeLand',
-    description: '4th, Dec, 2024',
+    src: [Picture12, Picture13, Picture14],
+    title: 'Ruut Chat',
+    description: '4th, Dec, 2023',
   },
   {
-    src: [Picture4, Picture3, Picture5],
-    title: 'Shop AD',
-    description: '4th, Dec, 2024',
+    src: [Picture1, Picture2, Picture3], // Multiple images per project
+    title: 'Earth Inc.',
+    description: '15th, Oct, 2023',
   },
 ];

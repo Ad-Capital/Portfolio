@@ -107,10 +107,10 @@ export const Header = () => {
   return (
     <div className="mx-auto py-40 pt-[20vh] px-4 text-center flex justify-center items-center flex-col relative">
       <h1 className="text-[7vw] md:text-7xl font-bold text-white w-[90%]">
-        I Design. I Develop. I Create.
+        I’m Adrian, your Web Design and Dev partner.
       </h1>
       <p className="text-base md:text-xl mt-8 text-neutral-200">
-        Hey, I’m Adrian. Let's work together to create something truly remarkable.
+        Design and Development engineered to turn your visitors into customers.
       </p>
     </div>
   );

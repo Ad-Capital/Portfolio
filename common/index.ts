@@ -16,7 +16,7 @@ export const exploreProjects: Project[] = [
     id: 'project-1',
     imgUrl: '/Okutahub.png',
     title: "OkutaHub",
-    url: '/https://www.okutahub.com/',
+    url: 'https://www.okutahub.com/',
   },
   {
     id: 'project-2',
@@ -28,7 +28,7 @@ export const exploreProjects: Project[] = [
     id: 'project-3',
     imgUrl: '/Ruut.png',
     title: 'Ruut Chat',
-    url: '/https://ruut.chat',
+    url: 'https://ruut.chat',
   },
   {
     id: 'project-4',
@@ -40,6 +40,6 @@ export const exploreProjects: Project[] = [
     id: 'project-5',
     imgUrl: '/Africansasaeng.png',
     title: 'African Sasaeng',
-    url: '/404',
+    url: 'https://africansasaeng.com/?elementor_library=coming-soon',
   },
 ];

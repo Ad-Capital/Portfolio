@@ -3,8 +3,8 @@
 import { useRef } from "react";
 import styles from './style.module.scss';
 import Picture1 from '@/public/Earth_Inc.png';
-import Picture2 from '@/public/Blog.png';
-import Picture3 from '@/public/estate.png';
+import Picture2 from '@/public/HubLanding.png';
+import Picture3 from '@/public/Ruut.png';
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
