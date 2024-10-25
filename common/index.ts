@@ -38,8 +38,8 @@ export const exploreProjects: Project[] = [
   },
   {
     id: 'project-5',
-    imgUrl: '/marketPlace.jpg',
-    title: 'Nft Marketplace',
+    imgUrl: '/Africansasaeng.png',
+    title: 'African Sasaeng',
     url: '/404',
   },
 ];
