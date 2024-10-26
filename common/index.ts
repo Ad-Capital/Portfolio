@@ -20,7 +20,7 @@ export const exploreProjects: Project[] = [
   },
   {
     id: 'project-2',
-    imgUrl: '/HubLanding.png',
+    imgUrl: '/Hub1.png',
     title: 'AD Hub',
     url: '/404',
   },

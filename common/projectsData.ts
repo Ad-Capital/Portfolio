@@ -15,9 +15,9 @@ import Picture12 from '@/public/Ruut.png';
 import Picture13 from '@/public/Ruut2.png';
 import Picture14 from '@/public/Ruut3.png';
 import Picture15 from '@/public/Africansasaeng.png';
-import Picture16 from '@/public/HubLanding.png';
-import Picture17 from '@/public/Blog.png';
-import Picture18 from '@/public/Africansasaeng.png';
+import Picture16 from '@/public/Hub1.png';
+import Picture17 from '@/public/Hub2.png';
+import Picture18 from '@/public/Blog.png';
 
 // Define the structure for each project
 export type Project = {
