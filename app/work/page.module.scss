@@ -1,0 +1,351 @@
+// page.module.scss
+.el {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  padding-top: 20vh;
+  min-height: 100vh; // Adjusted to fit content
+  position: relative;
+  background-color: rgb(22, 22, 22);
+  color: white;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 20px; // Added gap between buttons
+
+      .el {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        padding: 15px;
+        cursor: pointer;
+        transition: color 0.3s;
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 1.2rem;
+
+        &.active {
+          .indicator {
+            transform: scale(1);
+          }
+        }
+
+        &:hover {
+          .indicator {
+            transform: scale(1);
+          }
+        }
+
+        .indicator {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          top: 100%;
+          left: 50%;
+          background-color: white;
+          border-radius: 50%;
+          transform: scale(0) translateX(-50%);
+          transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    color: white;
+    min-height: 60vh;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      .projectCard {
+        margin-top: 10vh;
+        padding: 80px;
+        border-radius: 10px;
+        width: 98vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(133, 133, 133, 0.1);
+
+        .link{
+          padding-bottom: 20px;
+        }
+
+        .images {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+
+          .imageContainer {
+            position: relative;
+
+            img {
+              object-fit: cover;
+            }
+
+            &:nth-of-type(1) {
+              width: 80vw;
+              left: 23%;
+              right: 23%;
+              z-index: 1;
+            }
+
+            &:nth-of-type(2) {
+              left: 6vw;
+              top: 10vh;
+              width: 40vw;
+              z-index: 2;
+            }
+
+            &:nth-of-type(3) {
+              left: -60vw;
+              top: 30vh;
+              width: 30vw;
+              z-index: 3;
+            }
+
+            @media screen and (max-width: 430px) {
+              &:nth-of-type(1) {
+                width: 90vw;
+                left: 2%;
+                right: 2%;
+                z-index: 1;
+              }
+
+            }
+
+            @media screen and (max-width: 430px) {
+              &:nth-of-type(2) {
+                left: 54vw;
+                top: -10vh;
+                width: 40vw;
+                z-index: 2;
+              }
+
+            }
+
+            @media screen and (max-width: 430px) {
+              &:nth-of-type(3) {
+                left: -1vw;
+                top: 10vh;
+                width: 40vw;
+                z-index: 3;
+              }
+
+            }
+          }
+
+          @media screen and (max-width: 430px) {
+            .imageContainer {
+              position: absolute;
+            }
+
+          }
+        }
+
+        .projectTitle {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .projectDescription {
+          font-size: 1rem;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        .caseStudyButton {
+          padding: 10px 20px;
+          background-color: #ff7f50;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #ff6347;
+          }
+        }
+      }
+    }
+  }
+
+  .word {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+}
+
+.title {
+  margin: 0px;
+  margin-top: 25px;
+  font-size: 2vw;
+  line-height: 5vw;
+  font-weight: 700;
+  font-family: monospace;
+  display: flex;
+  align-self: flex-start;
+  text-decoration-color: black;
+}
+
+.circleContainer {
+  position: relative;
+  // margin-top: 100px;
+
+  .circle {
+    height: 1550%;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    background-color: rgb(22, 22, 22);
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .word {
+    width: 70%;
+  }
+
+  .container {
+    min-height: 300vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nav {
+    margin-bottom: 10vh;
+  }
+
+  .content {
+    padding: 10px;
+
+    .section {
+      h2 {
+        font-size: 2rem;
+        width: 100%;
+        margin-top: 10vh;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .projectCard {
+        padding: 5px;
+        margin-bottom: 20vh;
+
+        .projectTitle {
+          margin-top: 15vh;
+          font-size: 1.3rem;
+        }
+
+        .projectDescription {
+          margin-top: 15vh;
+          font-size: 0.9rem;
+        }
+
+        .caseStudyButton {
+          padding: 8px 16px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    .content {
+      padding: 10px 10px;
+
+      .section {
+        margin-bottom: 20vh;
+
+        h2 {
+          font-size: 1.8rem;
+          width: 100%;
+          margin-top: 5vh;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        .projectColumn {
+          gap: 20px;
+        }
+
+        .projectCard {
+          padding: 10px;
+
+          .projectTitle {
+            font-size: 1.2rem;
+          }
+
+          .projectDescription {
+            font-size: 0.8rem;
+          }
+
+          .caseStudyButton {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
