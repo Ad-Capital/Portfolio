@@ -17,9 +17,8 @@ import Picture14 from '@/public/Ruut3.png';
 import Picture15 from '@/public/Africansasaeng.png';
 import Picture16 from '@/public/Hub1.png';
 import Picture17 from '@/public/Hub2.png';
-import Picture18 from '@/public/Blog.png';
+import Picture18 from '@/public/Hub3.png';
 
-// Define the structure for each project
 export type Project = {
   src: StaticImageData[];
   title: string;
@@ -27,10 +26,9 @@ export type Project = {
   href: string;
 };
 
-// Define design projects
 export const designProjects: Project[] = [
   {
-    src: [Picture1, Picture2, Picture3], // Multiple images per project
+    src: [Picture1, Picture2, Picture3], 
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
     href: "https://earth-inc.vercel.app/"
@@ -55,42 +53,41 @@ export const designProjects: Project[] = [
   },
   {
     src: [Picture16, Picture17, Picture18],
-    title: "AD Hub",
+    title: "CybroCity",
     description: '19th, Jun, 2024',
-    href: "/404"
+    href: "https://cybrocity.vercel.app/"
   },
 ];
 
-// Define development projects
 export const developmentProjects: Project[] = [
   {
     src: [Picture16, Picture17, Picture18],
-    title: "AD Hub",
+    title: "CybroCity",
     description: '19th, Jun, 2024',
-    href: "/"
+    href: "https://cybrocity.vercel.app/"
   },
   {
     src: [Picture15, Picture15, Picture15],
     title: 'African Sasaeng',
     description: '16th, Jan, 2024',
-    href: "/"
+    href: "https://africansasaeng.com/?elementor_library=coming-soon"
   },
   {
     src: [Picture9, Picture10, Picture11],
     title: 'Okuta Hub',
     description: '8th, Mar, 2024',
-    href: "/"
+    href: "https://www.okutahub.com/"
   },
   {
     src: [Picture12, Picture13, Picture14],
     title: 'Ruut Chat',
     description: '4th, Dec, 2023',
-    href: "/"
+    href: "https://ruut.chat"
   },
   {
-    src: [Picture1, Picture2, Picture3], // Multiple images per project
+    src: [Picture1, Picture2, Picture3],
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
-    href: "/"
+    href: "https://earth-inc.vercel.app/"
   },
 ];

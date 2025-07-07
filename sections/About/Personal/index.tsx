@@ -19,6 +19,7 @@ export default function Index() {
     const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
     const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
     const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+    const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     const images = [
         {
@@ -44,42 +45,29 @@ export default function Index() {
                         Hey again, I’m Adrian, also known as Isaac.
                     </p>
                     <p>
-                        I’m a frontend developer, artist, and digital creator who’s all about making unique digital experiences. I combine creativity and tech know-how to bring ideas to life, building stuff that works great and really connects with people.
+                        A Web Developer and Designer who loves building websites that look stunning
+                        and perform effortlessly. My focus is on blending clean, functional design
+                        with robust technology to create online experiences that truly work for your
+                        business or personal brand.
+                    </p>
+                </div>
+                <div className={styles.word}>
+                    <p>
+                        With a background in both design and development,
+                        I don’t just code, I craft solutions. From wireframes to deployment,
+                        I pay attention to every detail so your website feels like you.
                     </p>
                 </div>
                 <div className={styles.word}>
                     <span className={styles.title}>What I Do</span>
                     <p>
-                        I focus on frontend development, using modern tools like React and Next.js, with TypeScript to make sure everything's solid and scalable. On top of coding, I also create sleek user interfaces that are both functional and great to look at.
-                    </p>
-                </div>
-                <div className={styles.word}>
-                    <span className={styles.title}>My Journey</span>
-                    <p>
-                        Over the years, I’ve taken on all kinds of projects that mix art, tech, and innovation. Whether it’s designing portfolios, crafting digital experiences, or diving deep into Web3, I’m always about pushing boundaries and creating work that leaves a mark.
+                        Design: Modern, user-centered visuals that reflect your brand.
                     </p>
                     <p>
-                        Some of the standout projects I’ve worked on include:
+                        Development: Fully responsive, optimized websites that work seamlessly across all devices.
                     </p>
                     <p>
-                        <span className={styles.title}>Earth Inc</span> 
-                        <br />
-                        I developed a platform focused on the buying and selling of art,
-                        providing a space for artists to showcase and sell their work.
-                        The platform also includes features like user profiles, secure
-                        payment integration, a marketplace for art-related products,
-                        and a community space where users can interact, share insights,
-                        and explore curated collections.
-                    </p>
-                    <p>
-                        <span className={styles.title}>AD Hub:</span>
-                        <br />
-                        I’m currently developing AD Hub, a blog website that covers a diverse range of topics
-                        including art, fashion, music, food, travel, design, coding, and technical analysis in
-                        forex trading. The platform is designed to be visually engaging and user-friendly,
-                        blending modern design elements with a seamless user experience. From content layout
-                        to functionality, the goal is to create a space where readers can easily explore and
-                        engage with insightful articles across multiple industries.
+                        Redesign: Elevate your existing site with a fresh look and better functionality.
                     </p>
                 </div>
             </div>
@@ -95,6 +83,23 @@ export default function Index() {
                     </motion.div>
                 ))}
             </div>
+            <div className={styles.body2}>
+                <div className={styles.word}>
+                    <span className={styles.title}>Why Clients Work with Me</span>
+                    <p>
+                        I bring a blend of creative design and technical expertise that ensures every project looks great and functions seamlessly.
+                    </p>
+                    <p>
+                        I make the process straightforward. No jargon - just practical advice and results.
+                    </p>
+                    <p>
+                        I’m all about creating designs and websites that are intuitive, effective, and uniquely yours.
+                    </p>
+                </div>
+            </div>
+            <motion.div style={{ height }} className={styles.circleContainer}>
+                <div className={styles.circle}></div>
+            </motion.div>
         </div>
     );
 }

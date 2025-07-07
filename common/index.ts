@@ -21,8 +21,8 @@ export const exploreProjects: Project[] = [
   {
     id: 'project-2',
     imgUrl: '/Hub1.png',
-    title: 'AD Hub',
-    url: '/404',
+    title: 'CybroCity',
+    url: 'https://cybrocity.vercel.app/',
   },
   {
     id: 'project-3',

@@ -34,7 +34,7 @@ export default function Home() {
             <ZoomParallax />
             <Headline />
             <Personal />
-            <Offers />
+            {/* <Offers /> */}
             <Footer />
         </main>
 

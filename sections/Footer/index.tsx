@@ -81,7 +81,7 @@ export default function Footer() {
                 Ona Adrian
               </h4>
               <p>
-                Copyright © 2019 - 2024. All rights reserved.
+                Copyright © 2025. All rights reserved.
               </p>
               <span>
                 <div className={styles.socials}>

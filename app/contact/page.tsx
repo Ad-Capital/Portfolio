@@ -101,7 +101,7 @@ const Contact = () => {
         <div className={styles.el}>
 
           <div className={styles.contact}>
-            <h3>Get in touch</h3>
+            <h3>Get In Touch</h3>
             <p>
               Whether you're starting a new website, refining your current one,
               bringing a creative idea to life, or looking for standout designs,
