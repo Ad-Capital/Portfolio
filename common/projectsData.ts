@@ -18,6 +18,9 @@ import Picture15 from '@/public/Africansasaeng.png';
 import Picture16 from '@/public/Hub1.png';
 import Picture17 from '@/public/Hub2.png';
 import Picture18 from '@/public/Hub3.png';
+import Picture19 from '@/public/images/LettubbeOnline.png';
+import Picture20 from '@/public/images/LettubbeOnline2.png';
+import Picture21 from '@/public/images/LettubbeOnline3.png';
 
 export type Project = {
   src: StaticImageData[];
@@ -28,7 +31,7 @@ export type Project = {
 
 export const designProjects: Project[] = [
   {
-    src: [Picture1, Picture2, Picture3], 
+    src: [Picture1, Picture2, Picture3],
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
     href: "https://earth-inc.vercel.app/"
@@ -56,6 +59,12 @@ export const designProjects: Project[] = [
     title: "CybroCity",
     description: '19th, Jun, 2024',
     href: "https://cybrocity.vercel.app/"
+  },
+  {
+    src: [Picture19, Picture20, Picture21],
+    title: 'Lettubbe',
+    description: '15th, Feb, 2025',
+    href: "https://lettubbe.online/"
   },
 ];
 
@@ -89,5 +98,11 @@ export const developmentProjects: Project[] = [
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
     href: "https://earth-inc.vercel.app/"
+  },
+  {
+    src: [Picture1, Picture2, Picture3],
+    title: 'Lettubbe',
+    description: '15th, Feb, 2025',
+    href: "https://lettubbe.online/"
   },
 ];
