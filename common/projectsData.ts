@@ -34,7 +34,7 @@ export const designProjects: Project[] = [
     src: [Picture1, Picture2, Picture3],
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
-    href: "https://earth-inc.vercel.app/"
+    href: "https://earthinc.io/"
   },
   {
     src: [Picture9, Picture10, Picture11],
@@ -64,7 +64,7 @@ export const designProjects: Project[] = [
     src: [Picture19, Picture20, Picture21],
     title: 'Lettubbe',
     description: '15th, Feb, 2025',
-    href: "https://lettubbe.online/"
+    href: "https://lettubbe-intro.vercel.app/"
   },
 ];
 
@@ -97,12 +97,12 @@ export const developmentProjects: Project[] = [
     src: [Picture1, Picture2, Picture3],
     title: 'Earth Inc.',
     description: '15th, Oct, 2023',
-    href: "https://earth-inc.vercel.app/"
+    href: "https://earthinc.io/"
   },
   {
     src: [Picture1, Picture2, Picture3],
     title: 'Lettubbe',
     description: '15th, Feb, 2025',
-    href: "https://lettubbe.online/"
+    href: "https://lettubbe-intro.vercel.app/"
   },
 ];
