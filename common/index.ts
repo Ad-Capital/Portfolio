@@ -38,8 +38,8 @@ export const exploreProjects: Project[] = [
   },
   {
     id: 'project-5',
-    imgUrl: '/Africansasaeng.png',
-    title: 'African Sasaeng',
-    url: 'https://africansasaeng.com/?elementor_library=coming-soon',
+    imgUrl: '/images/LettubbeOnline.png',
+    title: 'Lettubbe',
+    url: 'https://lettubbe.online',
   },
 ];
