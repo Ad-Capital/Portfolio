@@ -14,9 +14,9 @@ export interface Designs {
 export const exploreProjects: Project[] = [
   {
     id: 'project-1',
-    imgUrl: '/Okutahub.png',
-    title: "OkutaHub",
-    url: 'https://www.okutahub.com/',
+    imgUrl: '/images/trusouthking.jpg',
+    title: "Tru South King",
+    url: 'https://www.trusouthking.com/',
   },
   {
     id: 'project-2',

@@ -21,6 +21,9 @@ import Picture18 from '@/public/Hub3.png';
 import Picture19 from '@/public/images/LettubbeOnline.png';
 import Picture20 from '@/public/images/LettubbeOnline2.png';
 import Picture21 from '@/public/images/LettubbeOnline3.png';
+import Picture22 from '@/public/images/trusouthking.jpg';
+import Picture23 from '@/public/images/trusouthking1.jpg';
+import Picture24 from '@/public/images/trusouthking2.jpg';
 
 export type Project = {
   src: StaticImageData[];
@@ -65,6 +68,12 @@ export const designProjects: Project[] = [
     title: 'Lettubbe',
     description: '15th, Feb, 2025',
     href: "https://lettubbe-intro.vercel.app/"
+  },
+  {
+    src: [Picture22, Picture23, Picture24],
+    title: 'Tru South King',
+    description: '1st, Oct, 2025',
+    href: "https://trusouthking.com/"
   },
 ];
 

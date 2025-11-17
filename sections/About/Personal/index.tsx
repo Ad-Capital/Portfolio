@@ -45,7 +45,7 @@ export default function Index() {
                         Hey again, I’m Adrian, also known as Isaac.
                     </p>
                     <p>
-                        A Web Developer and Designer who loves building websites that look stunning
+                        A Software Developer and Designer who loves building tools, websites and mobile applications that look stunning
                         and perform effortlessly. My focus is on blending clean, functional design
                         with robust technology to create online experiences that truly work for your
                         business or personal brand.
